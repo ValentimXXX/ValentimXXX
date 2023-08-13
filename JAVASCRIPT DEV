@@ -1,0 +1,227 @@
+-----------------------------------------------------------------------
+- Variaveis
+-----------------------------------------------------------------------
+var idade = 25;
+console.log = (idade)
+var altura = 180;
+console.log = (altura)
+var nome = ('Roberta')
+console.log = (nome)
+
+-----------------------------------------------------------------------
+- Tipos Primitivos
+-----------------------------------------------------------------------
+let nome = 'Rafael'; //string literal
+let idade = 25; // number literal
+let estaAprovado = true; //boolean
+let sobrenome = undefined; //Underfined
+let corSelecionado = null // Redefinir um valor
+-----------------------------------------------------------------------
+Constantes
+-----------------------------------------------------------------------
+const valorIngressoAdulto = 30;
+console.log = (valorIngressoAdulto)
+
+Let----> (Redefinir quando quiser)
+const-----> (não pode mudar)
+
+-----------------------------------------------------------------------
+- Tipagem dinâmica
+-----------------------------------------------------------------------
+let nome = ('Roberta')
+let idade = 18;
+let estaAprovado = true;
+let sobrenome = undefined;
+let conSelecionado = null;
+
+exemplo 
+typeof nome
+(string)
+typeof idade
+(number)
+-----------------------------------------------------------------------
+Objetos
+-----------------------------------------------------------------------
+let nome = 'Roberta';
+let idade = 18;
+let estaAprovado = true;
+let sobrenome = undefined;
+
+let pessoa = {
+    nome: 'Roberta',
+    idade: 18,               -----------> Objetos
+    estaAprovado: true,     
+    sobrenome: 'Silva'
+ };
+
+ console.log(pessoa);
+-----------------------------------------------------------------------
+- Arrays
+-----------------------------------------------------------------------
+// Arrays = conjuntos de dados
+
+let familia = [19,15,'lucas',16];
+console.log (familia.length);
+console.log(familia[0]);
+
+Na pratica
+
+let nomeDoColega = [true,16,'Antony','Angelica'];
+console.log (nomeDoColega.length);
+console.log(nomeDoColega[4]);
+
+-----------------------------------------------------------------------
+- Functions
+-----------------------------------------------------------------------
+
+// Verbo + Substantivo
+let corSite = "azul";
+function resetaCor(cor,tonalidade){
+      corSite = cor + ' ' + tonalidade;
+}; 
+
+console.log(corSite);
+resetaCor("verde","claro");
+console.log(corSite);
+-----------------------------------------------------------------------
+- Tipos de Funçôes
+- -----------------------------------------------------------------------
+
+  // Realizar uma tarefa, não devolve nada
+function dizerNome(){
+    console.log(dizerNome);
+}
+
+dizerNome();
+// Faz um calculo ou operação e retorna algo
+function MultiplicarPorDois(valor){
+    return valor* 2;
+}
+
+console.log(MultiplicarPorDois(5));
+
+let resultado = MultiplicarPorDois(5);
+console.log(resultado);
+-----------------------------------------------------------------------
+- Operadores
+-----------------------------------------------------------------------
+   // Operadores aritméticos(matemáticos)
+  
+  let salario = 100;
+
+// + , - , * , / , **
+
+console.log(salario + salario);
+console.log(salario-salario)
+console.log(salario * salario)
+console.log(salario / salario)
+console.log(salario ** salario)
+
+var idade = 18;
+
+console.log(idade--);
+console.log(idade);
+----------------------------------------------------------------------
+  - Operadores Atribuição
+----------------------------------------------------------------------  
+let valorTecladoGamer = 100;
+// valorTecladoGamer = valorTecladoGamer + valorTecladoGamer;
+// valorTecladoGamer = valorTecladoGamer - valorTecladoGamer;
+valorTecladoGamer += valorTecladoGamer;
+console.log (valorTecladoGamer)
+-----------------------------------------------------------------------
+  - Operadores igualdade
+-----------------------------------------------------------------------
+  //Igualdade estrita
+
+console.log ( 1 === 1);
+console.log ('1' === 1 );
+
+//igualdade solta
+console.log (1 == 1);
+console.log ('1' == 1);
+----------------------------------------------------------------------
+//Operadores Ternários
+
+let pontos = 100;
+let tipo = 50 ? 'premium' : 'comum';
+console.log(tipo);
+
+----------------------------------------------------------------------
+  - Operadores de comparação
+----------------------------------------------------------------------    
+ // Operadores igualdade
+
+  //Igualdade estrita
+
+console.log ( 1 === 1);
+console.log ('1' === 1 );
+
+//igualdade solta
+console.log (1 == 1);
+console.log ('1' == 1);
+
+//Operadores Ternários
+
+let pontos = 100;
+let tipo = 50 ? 'premium' : 'comum';
+console.log(tipo);
+
+-----------------------------------------------------------------------
+  - Operadores logicos
+----------------------------------------------------------------------
+
+  //Retorna TRUE se os dois operandos foren true
+
+ // console.log(false && true);
+
+let maiorDeIdade = true;
+let possuiCarteiraDeTrabalho = true;
+let podeAplicar = maiorDeIdade && possuiCarteiraDeTrabalho;
+
+console.log (podeAplicar);
+
+----------------------------------------------------------------------
+
+// Operador Logico ou (||)
+//Retornar true se um dos operandos forem true
+
+let maiorDeIdade = false;
+let possuiCarteiraDeTrabalho = true;
+let podeAplicar = maiorDeIdade || possuiCarteiraDeTrabalho;
+
+console.log (podeAplicar); 
+----------------------------------------------------------------------
+
+// Operador NOT (!)
+
+let canditadoRecusado = !podeAplicar;
+
+console.log('canditadoRecusado',canditadoRecusado);
+-----------------------------------------------------------------------
+- Comparações não boleanos
+-----------------------------------------------------------------------
+// Falsy
+
+//undefined
+//null
+// 0
+// false
+// ''
+// NaN - not a number
+
+//Truthy
+
+let corPersonalizada = 'Vermelho';
+let corPadrao = 'Azul';
+let corPerfil = corPersonalizada || corPadrao;
+
+console.log(corPerfil);
+------------------------------------------------------------------------
+(Mini-Projeto 1) - Trocando Valores de Variáveis
+-----------------------------------------------------------------------  
+
+
+
+ 
+
