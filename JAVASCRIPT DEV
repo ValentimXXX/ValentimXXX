@@ -221,7 +221,116 @@ console.log(corPerfil);
 (Mini-Projeto 1) - Trocando Valores de Variáveis
 -----------------------------------------------------------------------  
 
+let a = 'Vermelho'
+let b = 'Azul'
 
+let c = a;
+a = b;             ------------> Comandos para substituir
+b = c;
 
- 
+console.log (a);
+console.log (b);
 
+-----------------------------------------------------------------------  
+ if..Else
+-----------------------------------------------------------------------  
+// If..Else
+
+// se a hora estiver entre 06:00 até 12:00 :  bom dia!
+// Se estiver entre 12:00 até 18:00 : Boa tarde!
+// Caso contrário : Boa noite!
+
+if (condicao) {
+  // codigo a ser executado
+})
+else if (outraCondicao); {
+    // codigo a ser executado
+}
+else{
+    //codigo a ser executado
+}
+
+EXEMPLO
+
+if (hora > 6 && hora < 12 ){
+    console.log("bom dia");
+}
+else if (hora > 12 && hora < 18){
+    console.log("boa tarde");
+}
+else {
+    console.log("boa noite");
+}
+
+Run: "Boa noite"
+-----------------------------------------------------------------------  
+switch case
+-----------------------------------------------------------------------  
+
+let permissao; 
+permissao = 'gerente';
+switch (permissao) {
+    case 'comum':
+        console.log('usuário comum');
+        break;
+
+        case 'gerente':
+            console.log('usuário gerente');
+            break;
+
+            case 'diretor':
+                console.log('usuário diretor');
+                break;
+                default:
+                    console.log('Usuário não reconhecido!');
+}
+
+------------------------------------------------------------------------------------
+ Laço For/Loop For
+------------------------------------------------------------------------------------
+// 1 . For
+
+for(var i = 5; i >= 1; i--) {
+    if(i % 2 !== 0){
+        console.log(i);
+    }
+}
+------------------------------------------------------------------------------------
+// While loop
+let i = 5;
+while(1 >= 1) {
+    if(i % 2!== 0){
+        console.log(1);
+    }
+}
+------------------------------------------------------------------------------------
+// Do.. While
+
+let i = 0;
+do {
+    console.log('digitando!', i);
+    i++;
+} while(i < 10)
+
+------------------------------------------------------------------------------------
+//for-in 
+
+const pessoa = {
+    nome: 'Roberta',
+    idade: 18
+};
+
+for(let chave in pessoa) {
+    console.log(chave);
+}
+
+const cores = ['vermelho','Azul','Verde'];
+
+for (let indice in cores) {
+    console.log(indice,cores[indice])
+------------------------------------------------------------------------------------
+//for-off
+
+for(let cor of cores){
+        console.log(cor);
+    }
