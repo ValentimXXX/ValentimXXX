@@ -334,3 +334,68 @@ for (let indice in cores) {
 for(let cor of cores){
         console.log(cor);
     }
+------------------------------------------------------------------------------------
+(Mini-Projeto 2) - Máximo Entre Dois Valores
+------------------------------------------------------------------------------------
+
+var money = max(5000,2000)
+console.log (money);
+function max (dinheiro1,dinheiro2,dinheiro3){
+    return dinheiro1 > dinheiro2 ? dinheiro1: dinheiro2;
+}
+------------------------------------------------------------------------------------
+- (Mini-Projeto 3) - FizzBuzz
+------------------------------------------------------------------------------------
+
+// Divisivel por 3 => fizzBuzz
+// Divisivel por 5 => Buzz
+// Divisivel por 3 e 5 => FizzBuzz
+// Não divisivel por 3 ou 5 => entrada
+// Não é um numero => 'Não é um número'
+
+const resultado = fizzBuzz(3);
+console.log(resultado);
+
+function fizzBuzz(entrada){
+
+}
+
+exemplo 
+
+const resultado = fizzBuzz(15);
+console.log(resultado);
+
+function fizzBuzz(entrada){
+    if ( typeof entrada !== 'number')
+        return 'não é um numero'
+    if(entrada % 3 === 0 && entrada % 5 === 0)
+        return 'FizzBuzz'
+    if (entrada % 3 === 0)
+        return 'Fizz'
+    if (entrada % 5 === 0)
+       return 'Buzz';
+    if(entrada % 3 === 0 && entrada % 5 === 0)
+       return 'FizzBuzz'
+    return entrada;
+}
+------------------------------------------------------------------------------------
+(Mini-Projeto 4) - Medidor de Velocidade
+------------------------------------------------------------------------------------
+verificarVelocidade(70);
+
+function verificarVelocidade(velocidade){
+    const velocidadeMaxima = 70;
+    const KmPorPonto = 5;
+    if (velocidade <= 70)
+     console.log ('ok');
+  else {
+   const pontos = Math.floor((velocidade - velocidadeMaxima) / KmPorPonto)
+    if( pontos >= 12)
+        console.log ('Carteira Suspensa')
+    else
+       console.log('pontos',pontos);
+  }
+}
+------------------------------------------------------------------------------------
+ (Mini-Projeto 5) - Par ou Impar
+------------------------------------------------------------------------------------
